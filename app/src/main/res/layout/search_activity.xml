@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/background_white"
+    tools:context="com.baidu.LzhBaidu.SearchActivity">
+
+    <!--buttons in the ground-->
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_launcher_home"
+        app:layout_constraintBottom_toBottomOf="@id/homepage_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/vedio_button"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_launcher_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/home_button"
+        android:layout_marginLeft="140dp"
+        />
+
+    <Button
+        android:id="@+id/homepage_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/ic_launcher_3"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/vedio_button"
+        app:layout_constraintRight_toRightOf="parent" />
+    <!---->
+
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconifiedByDefault="false"
+        app:queryHint="请输入搜索内容"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

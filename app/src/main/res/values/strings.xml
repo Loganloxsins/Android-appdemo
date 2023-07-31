@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Lesson9Demo</string>
-    <string name="title_home">主页</string>
-    <string name="title_video">视频</string>
-    <string name="title_mine">我的</string>
+    <string name="app_name">LzhBaiduv1.0</string>
+
+    <string name="search_hint">type to search</string>
 </resources>
